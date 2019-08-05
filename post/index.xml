@@ -68,5 +68,14 @@ The Solution Since this can be a mission to figure out, the following are instan
 The first step that happens in Elasticsearch will provision a new cluster with your new configuration.</description>
     </item>
     
+    <item>
+      <title>test post</title>
+      <link>https://data-life.github.io/post/test/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/test/</guid>
+      <description>echo &amp;quot;hello world !!&amp;quot;  </description>
+    </item>
+    
   </channel>
 </rss>

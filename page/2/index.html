@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Something Pithy about Data" />
+  	<meta property="og:site_name" content="Something Pithy about Data" />
+  	<meta property="og:url" content="https://data-life.github.io/" />
+    
+    
+    <meta property="og:type" content="website" />
+    
+
+  <title>
+     Something Pithy about Data
+  </title>
+
+    <meta name="description" content="Experiences using AWS Big Data services" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://data-life.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://data-life.github.io/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="https://data-life.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+      
+        <link href="https://data-life.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Something Pithy about Data" />
+      
+    
+    <meta name="generator" content="Hugo 0.56.3" />
+
+    <link rel="canonical" href="https://data-life.github.io/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-82435011-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+<div id="particles-js"></div>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://data-life.github.io/js/particles.js"></script>   
+</head>
+<body class="nav-closed">
+
+  
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header no-cover">
+
+    
+
+    <nav class="main-nav overlay clearfix">
+        
+        
+    </nav>
+<div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+              <a class="btn-bootstrap-2 title-scroll" href="#content">Something Pithy about Data</a>
+          </h1>
+          <h2 class="page-description">Experiences using AWS Big Data services</h2>
+        </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+
+    
+
+    <div class="extra-pagination inner">
+        <nav class="pagination" role="navigation">
+	
+	    <a class="newer-posts" href="https://data-life.github.io/">&larr; Newer Posts</a>
+	
+	<span class="page-number">Page 2 of 2</span>
+	
+</nav>
+
+    </div>
+
+    
+        
+
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="https://data-life.github.io/post/elasticsearch/clusterconfigurationchanges/">Anatomy of a Cluster Configuration Change in Elasticsearch</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <p>When ever any change has been made to an AWS Elasticsearch cluster, whether it is changing the instance type for your data nodes, adding master nodes or changing an access policy, there is a process that happens in the background that should be understood before a change is commited so you can understand how a change can affect your cluster.</p>
+
+<p>The first step that happens in Elasticsearch will provision a new cluster with your new configuration. When this cluster has come online and is working correctly, your data then starts to replicate from your existing cluster to your new one. Once this data has been replicated across then Elasticsearch will wait for your existing cluster to finish processing any queries and then terminate your existing cluster. This leaves you with only your new cluster that has your latest configuration.</p>
+
+<p><strong>So what are the implications of this?</strong></p>
+
+<ol>
+<li><p>Your nodes metric will reflect the extra cluster that is being provisioned and copying data. This can be useful for looking at whether a process has kicked off or will be ending soon with a configuration. It can also help with some of the follow up troubleshooting that I will be going in to below. The important thing here is that you are not charged for these extra nodes, you are only charged for the number of nodes that you have set in your latest configuration.</p></li>
+
+<li><p>If your cluster is running out of free space, this can be a problem for the replication process. You may need to reach out to AWS support if you start the cluster replication process with no free storage and it doesn&rsquo;t seem to complete properly.</p></li>
+
+<li><p>The process involved with a cluster configuration change is asynchronous. This means that if you process a change and suddenly change your mind or want to tweak another setting before the migration is complete, a third cluster will be provisioned with your new settings. Sometimes you can wait things out and let things resolve, but the more changes you process, the more time you can expect to wait while many clusters finish replication between each other. This is one of those behaviours that can be observed in the nodes metric and can be very helpful with troubleshooting. Reaching out to AWS support can help you get out of a tricky situation like this.</p></li>
+
+<li><p>A cluster change can be a resource intensive process at the worst of times. If your cluster is flying close to garbage collection or worse, then you may never be able to complete a migration. Check the health of your cluster and alleviate things before a migration if you can</p></li>
+
+<li><p>If your cluster makes use of T2 instances, keep an eye on your CPU Credits when you are planning a configuration change. As mentioned above, since this process can be resource intensive, you can run the risk of running out of CPU credits during a migration which will grind your cluster to a halt. It is for this reason that T2 instances are not recommended for production clusters and only testing and proof of concept clusters</p></li>
+
+<li><p>The process of migration might seem to be convoluted, especially when you look at all the gotchas of the situation, but the important thing to note here is that this process allows you to achieve no downtime for a cluster configuration change. This is one of the major upsides to having the managed service.</p></li>
+</ol>
+
+          </section>
+      </p>
+      
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/elasticsearch/">#Elasticsearch</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/configuration/">#Configuration</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/nodes/">#Nodes</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/metrics/">#Metrics</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/anatomy/">#Anatomy</a></span>
+         
+
+    </section>
+    <footer class="post-meta">
+        
+        
+            markdawe
+        
+        on
+            
+                <a href="https://data-life.github.io/tags/elasticsearch/">#Elasticsearch</a>,
+            
+                <a href="https://data-life.github.io/tags/configuration/">#Configuration</a>,
+            
+                <a href="https://data-life.github.io/tags/nodes/">#Nodes</a>,
+            
+                <a href="https://data-life.github.io/tags/metrics/">#Metrics</a>,
+            
+                <a href="https://data-life.github.io/tags/anatomy/">#Anatomy</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-06T11:42:26Z">
+            6 Aug 2016
+        </time>
+    </footer>
+</article>
+
+    
+        
+
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="https://data-life.github.io/post/test/">test post</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            <pre><code class="language-bash">echo &quot;hello world !!&quot;
+</code></pre>
+
+          </section>
+      </p>
+      
+         
+
+    </section>
+    <footer class="post-meta">
+        
+        
+        
+            
+        
+        
+        <time class="post-date" datetime="2016-01-01T00:00:00Z">
+            1 Jan 2016
+        </time>
+    </footer>
+</article>
+
+    
+
+    <nav class="pagination" role="navigation">
+	
+	    <a class="newer-posts" href="https://data-life.github.io/">&larr; Newer Posts</a>
+	
+	<span class="page-number">Page 2 of 2</span>
+	
+</nav>
+
+
+</main>
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Something Pithy about Data</a> All rights reserved - 2016</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://data-life.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://data-life.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://data-life.github.io/js/index.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" Instance Storage &middot;  Something Pithy about Data" />
+  	<meta property="og:site_name" content="Something Pithy about Data" />
+  	<meta property="og:url" content="https://data-life.github.io/tags/instance-storage/" />
+    
+    
+    <meta property="og:type" content="website" />
+    
+
+  <title>
+     Instance Storage &middot;  Something Pithy about Data
+  </title>
+
+    <meta name="description" content="Experiences using AWS Big Data services" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://data-life.github.io/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://data-life.github.io/images/apple-touch-icon.png" />
+    
+    <link rel="stylesheet" type="text/css" href="https://data-life.github.io/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="https://data-life.github.io/index.xml" rel="alternate" type="application/rss+xml" title="Something Pithy about Data" />
+      
+      
+        <link href="https://data-life.github.io/tags/instance-storage/index.xml" rel="alternate" type="application/rss+xml" title="Instance Storage &middot; Something Pithy about Data" />
+      
+    
+    <meta name="generator" content="Hugo 0.56.3" />
+
+    <link rel="canonical" href="https://data-life.github.io/tags/instance-storage/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-82435011-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+<div id="particles-js"></div>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+<script src="https://data-life.github.io/js/particles.js"></script>   
+</head>
+<body class="nav-closed">
+
+  
+
+
+ <div class="site-wrapper">
+
+
+
+
+	<header class="main-header tag-head no-cover">
+
+    <nav class="main-nav overlay clearfix">
+      
+      
+        
+          <a class="menu-button icon-feed" href="https://data-life.github.io/tags/instance-storage/index.xml">&nbsp;&nbsp;Subscribe</a>
+        
+      
+    </nav>
+    <div class="vertical">
+
+        <div class="main-header-content inner">
+            <h1 class="page-title">
+
+              <a class="btn-bootstrap-2" href="#content">Something Pithy about Data</a>
+          </h1>
+        </div>
+</div>
+    <a class="scroll-down icon-arrow-left" href="#content"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+    
+
+	<div class="extra-pagination inner">
+    <nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+	</div>
+
+	
+	   
+
+<article class="post post">
+    <header class="post-header">
+        <h2 class="post-title"><a href="https://data-life.github.io/post/datapipeline/supportedemrnodetypes/">Supported EMRCluster Node Types</a></h2>
+    </header>
+    <section class="post-excerpt">
+      <p>
+          <section class="post-content">
+            
+
+<h2 id="the-problem">The Problem</h2>
+
+<p>Data Pipeline supports instances that use Instance Storage, not EBS volumes. EMR clusters support both. These two worlds collide when you try to use Data Pipeline to launch an EMR cluster since your nodes will need to support instance storage.</p>
+
+<h2 id="the-solution">The Solution</h2>
+
+<p>Since this can be a mission to figure out, the following are instance types categorized according to optimizations that have instance storage and are supported by EMR. These are all available to launch in US-East-1, so if you are looking to launch in another region, make sure that it supports the instance type you are looking for:</p>
+
+<p><strong>Compute Optimized (Previous Generation)</strong></p>
+
+<ul>
+<li>c1.medium</li>
+<li>c1.xlarge</li>
+<li>cc2.8xlarge</li>
+</ul>
+
+<p><strong>Compute Optimized</strong></p>
+
+<ul>
+<li>c3.xlarge</li>
+<li>c3.2xlarge</li>
+<li>c3.4xlarge</li>
+<li>c3.8xlarge</li>
+</ul>
+
+<p><strong>GPU Instances</strong></p>
+
+<ul>
+<li>cg1.4xlarge</li>
+<li>g2.2xlarge</li>
+</ul>
+
+<p><strong>Memory Optimized (Previous Generation)</strong></p>
+
+<ul>
+<li>cr1.8xlarge</li>
+<li>m2.xlarge</li>
+<li>m2.2xlarge</li>
+<li>m2.4xlarge</li>
+</ul>
+
+<p><strong>Memory Optimized</strong></p>
+
+<ul>
+<li>r3.xlarge</li>
+<li>r3.2xlarge</li>
+<li>r3.4xlarge</li>
+<li>r3.8xlarge</li>
+</ul>
+
+<p><strong>Storage Optimized</strong></p>
+
+<ul>
+<li>d2.xlarge</li>
+<li>d2.2xlarge</li>
+<li>d2.4xlarge</li>
+<li>hs1.8xlarge</li>
+<li>i2.xlarge</li>
+<li>i2.2xlarge</li>
+<li>i2.4xlarge</li>
+<li>i2.8xlarge</li>
+</ul>
+
+<p><strong>Storage Optimized (Previous generation)</strong></p>
+
+<ul>
+<li>hi1.4xlarge</li>
+</ul>
+
+<p><strong>General Purpose (Previous generation)</strong></p>
+
+<ul>
+<li>m1.medium</li>
+<li>m1.large</li>
+<li>m1.xlarge</li>
+</ul>
+
+<p><strong>General Purpose</strong></p>
+
+<ul>
+<li>m3.xlarge</li>
+<li>m3.2xlarge</li>
+</ul>
+
+          </section>
+      </p>
+      
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/data-pipeline/">#Data Pipeline</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/emr/">#EMR</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/instance-type/">#Instance Type</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/instance-storage/">#Instance Storage</a></span>
+         
+          <span class="post-tag small"><a href="https://data-life.github.io/tags/emrcluster/">#EMRCluster</a></span>
+         
+
+    </section>
+    <footer class="post-meta">
+        
+        
+            markdawe
+        
+        on
+            
+                <a href="https://data-life.github.io/tags/data-pipeline/">#Data Pipeline</a>,
+            
+                <a href="https://data-life.github.io/tags/emr/">#EMR</a>,
+            
+                <a href="https://data-life.github.io/tags/instance-type/">#Instance Type</a>,
+            
+                <a href="https://data-life.github.io/tags/instance-storage/">#Instance Storage</a>,
+            
+                <a href="https://data-life.github.io/tags/emrcluster/">#EMRCluster</a>,
+            
+        
+        <time class="post-date" datetime="2016-08-20T11:07:59Z">
+            20 Aug 2016
+        </time>
+    </footer>
+</article>
+
+	
+
+	<nav class="pagination" role="navigation">
+	
+	<span class="page-number">Page 1 of 1</span>
+	
+</nav>
+
+</main>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Something Pithy about Data</a> All rights reserved - 2016</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://data-life.github.io/js/jquery.js"></script>
+    <script type="text/javascript" src="https://data-life.github.io/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://data-life.github.io/js/index.js"></script>
+
+</body>
+</html>
+
