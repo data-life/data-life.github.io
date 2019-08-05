@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Step on Something Pithy about Data</title>
+    <link>https://data-life.github.io/tags/step/</link>
+    <description>Recent content in Step on Something Pithy about Data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Wed, 24 Aug 2016 12:42:42 +0000</lastBuildDate>
+    
+	<atom:link href="https://data-life.github.io/tags/step/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Predictable IP For Your Master Node</title>
+      <link>https://data-life.github.io/post/emr/predictableipforyourmaster/</link>
+      <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/emr/predictableipforyourmaster/</guid>
+      <description>The Problem Sometimes you are looking to be able to specify both the public and the private IP for an EMR cluster when it launches. This allows you to not have to change any existing infrastructure, while still being able to decommission an EMR cluster whenever it is needed and provision a new one. Currently you are able to attach an EIP to the master instance, but this does not solve the issue for private clusters and is cumbersome if clusters are constantly being provisioned/decommissioned.</description>
+    </item>
+    
+  </channel>
+</rss>

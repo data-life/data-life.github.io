@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Something Pithy about Data</title>
+    <link>https://data-life.github.io/tags/</link>
+    <description>Recent content in Tags on Something Pithy about Data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Tue, 04 Oct 2016 12:03:44 +0000</lastBuildDate>
+    
+	<atom:link href="https://data-life.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Architecture</title>
+      <link>https://data-life.github.io/tags/architecture/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/architecture/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch</title>
+      <link>https://data-life.github.io/tags/elasticsearch/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/elasticsearch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Nodes</title>
+      <link>https://data-life.github.io/tags/nodes/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/nodes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Split Brain</title>
+      <link>https://data-life.github.io/tags/split-brain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/split-brain/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Troubleshooting</title>
+      <link>https://data-life.github.io/tags/troubleshooting/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/troubleshooting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Cloudwatch</title>
+      <link>https://data-life.github.io/tags/cloudwatch/</link>
+      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/cloudwatch/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://data-life.github.io/tags/metrics/</link>
+      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/metrics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Status</title>
+      <link>https://data-life.github.io/tags/status/</link>
+      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/status/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EMR</title>
+      <link>https://data-life.github.io/tags/emr/</link>
+      <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/emr/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ENI</title>
+      <link>https://data-life.github.io/tags/eni/</link>
+      <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/eni/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Step</title>
+      <link>https://data-life.github.io/tags/step/</link>
+      <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/step/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Data Pipeline</title>
+      <link>https://data-life.github.io/tags/data-pipeline/</link>
+      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/data-pipeline/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>EMRCluster</title>
+      <link>https://data-life.github.io/tags/emrcluster/</link>
+      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/emrcluster/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instance Storage</title>
+      <link>https://data-life.github.io/tags/instance-storage/</link>
+      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/instance-storage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Instance Type</title>
+      <link>https://data-life.github.io/tags/instance-type/</link>
+      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/instance-type/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>powershell</title>
+      <link>https://data-life.github.io/tags/powershell/</link>
+      <pubDate>Wed, 10 Aug 2016 12:50:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/powershell/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>scripting</title>
+      <link>https://data-life.github.io/tags/scripting/</link>
+      <pubDate>Wed, 10 Aug 2016 12:50:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/scripting/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>spot instance</title>
+      <link>https://data-life.github.io/tags/spot-instance/</link>
+      <pubDate>Wed, 10 Aug 2016 12:50:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/spot-instance/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anatomy</title>
+      <link>https://data-life.github.io/tags/anatomy/</link>
+      <pubDate>Sat, 06 Aug 2016 11:42:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/anatomy/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Configuration</title>
+      <link>https://data-life.github.io/tags/configuration/</link>
+      <pubDate>Sat, 06 Aug 2016 11:42:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

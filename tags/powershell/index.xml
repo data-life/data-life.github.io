@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>powershell on Something Pithy about Data</title>
+    <link>https://data-life.github.io/tags/powershell/</link>
+    <description>Recent content in powershell on Something Pithy about Data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Wed, 10 Aug 2016 12:50:26 +0000</lastBuildDate>
+    
+	<atom:link href="https://data-life.github.io/tags/powershell/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Use Powershell to find the best Spot Instance</title>
+      <link>https://data-life.github.io/post/scripting/powershellbestspotinstance/</link>
+      <pubDate>Wed, 10 Aug 2016 12:50:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/scripting/powershellbestspotinstance/</guid>
+      <description>How do you find the best value for money Spot Instance Sometimes you are just looking for the cheapest way to do something in AWS. Initially you look at spot instances, but realistically you need a monster machine to achieve what you are looking to do. Either your task is CPU or Memory intensive and so you look at using spot prices for one of the larger AWS instances. Assuming this task you are looking to achieve can be run using a cluster on EC2 or one that supports spot instances, it turns out that the best value for money is not always the largest instance types.</description>
+    </item>
+    
+  </channel>
+</rss>

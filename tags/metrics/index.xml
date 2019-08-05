@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Metrics on Something Pithy about Data</title>
+    <link>https://data-life.github.io/tags/metrics/</link>
+    <description>Recent content in Metrics on Something Pithy about Data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Thu, 25 Aug 2016 08:22:55 +0000</lastBuildDate>
+    
+	<atom:link href="https://data-life.github.io/tags/metrics/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Elasticsearch cluster metrics and what they mean</title>
+      <link>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</link>
+      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anatomy of a Cluster Configuration Change in Elasticsearch</title>
+      <link>https://data-life.github.io/post/elasticsearch/clusterconfigurationchanges/</link>
+      <pubDate>Sat, 06 Aug 2016 11:42:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/elasticsearch/clusterconfigurationchanges/</guid>
+      <description>When ever any change has been made to an AWS Elasticsearch cluster, whether it is changing the instance type for your data nodes, adding master nodes or changing an access policy, there is a process that happens in the background that should be understood before a change is commited so you can understand how a change can affect your cluster.
+The first step that happens in Elasticsearch will provision a new cluster with your new configuration.</description>
+    </item>
+    
+  </channel>
+</rss>

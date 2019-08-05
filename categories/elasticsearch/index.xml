@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Elasticsearch on Something Pithy about Data</title>
+    <link>https://data-life.github.io/categories/elasticsearch/</link>
+    <description>Recent content in Elasticsearch on Something Pithy about Data</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-US</language>
+    <copyright>All rights reserved - 2016</copyright>
+    <lastBuildDate>Tue, 04 Oct 2016 12:03:44 +0000</lastBuildDate>
+    
+	<atom:link href="https://data-life.github.io/categories/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/post/elasticsearch/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/elasticsearch/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>Elasticsearch cluster metrics and what they mean</title>
+      <link>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</link>
+      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anatomy of a Cluster Configuration Change in Elasticsearch</title>
+      <link>https://data-life.github.io/post/elasticsearch/clusterconfigurationchanges/</link>
+      <pubDate>Sat, 06 Aug 2016 11:42:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/post/elasticsearch/clusterconfigurationchanges/</guid>
+      <description>When ever any change has been made to an AWS Elasticsearch cluster, whether it is changing the instance type for your data nodes, adding master nodes or changing an access policy, there is a process that happens in the background that should be understood before a change is commited so you can understand how a change can affect your cluster.
+The first step that happens in Elasticsearch will provision a new cluster with your new configuration.</description>
+    </item>
+    
+  </channel>
+</rss>
