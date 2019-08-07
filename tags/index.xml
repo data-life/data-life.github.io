@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Something Pithy about Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>All rights reserved - 2016</copyright>
+    <copyright>All rights reserved - 2019</copyright>
     <lastBuildDate>Tue, 04 Oct 2016 12:03:44 +0000</lastBuildDate>
     
 	<atom:link href="https://data-life.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
@@ -58,33 +58,6 @@
     </item>
     
     <item>
-      <title>Cloudwatch</title>
-      <link>https://data-life.github.io/tags/cloudwatch/</link>
-      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/tags/cloudwatch/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Metrics</title>
-      <link>https://data-life.github.io/tags/metrics/</link>
-      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/tags/metrics/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Status</title>
-      <link>https://data-life.github.io/tags/status/</link>
-      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/tags/status/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>EMR</title>
       <link>https://data-life.github.io/tags/emr/</link>
       <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
@@ -108,42 +81,6 @@
       <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
       
       <guid>https://data-life.github.io/tags/step/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Pipeline</title>
-      <link>https://data-life.github.io/tags/data-pipeline/</link>
-      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/tags/data-pipeline/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>EMRCluster</title>
-      <link>https://data-life.github.io/tags/emrcluster/</link>
-      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/tags/emrcluster/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Instance Storage</title>
-      <link>https://data-life.github.io/tags/instance-storage/</link>
-      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/tags/instance-storage/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Instance Type</title>
-      <link>https://data-life.github.io/tags/instance-type/</link>
-      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/tags/instance-type/</guid>
       <description></description>
     </item>
     
@@ -189,6 +126,15 @@
       <pubDate>Sat, 06 Aug 2016 11:42:26 +0000</pubDate>
       
       <guid>https://data-life.github.io/tags/configuration/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Metrics</title>
+      <link>https://data-life.github.io/tags/metrics/</link>
+      <pubDate>Sat, 06 Aug 2016 11:42:26 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/tags/metrics/</guid>
       <description></description>
     </item>
     

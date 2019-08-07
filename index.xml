@@ -6,11 +6,47 @@
     <description>Recent content on Something Pithy about Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>All rights reserved - 2016</copyright>
+    <copyright>All rights reserved - 2019</copyright>
     <lastBuildDate>Tue, 04 Oct 2016 12:03:44 +0000</lastBuildDate>
     
 	<atom:link href="https://data-life.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/analysis/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/analysis/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/concepts/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/concepts/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/etl/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/etl/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/mobility/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/mobility/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
     
     <item>
       <title>The Split Brain Problem</title>
@@ -22,12 +58,30 @@
     </item>
     
     <item>
-      <title>Elasticsearch cluster metrics and what they mean</title>
-      <link>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</link>
-      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/processing/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
       
-      <guid>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</guid>
-      <description></description>
+      <guid>https://data-life.github.io/processing/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/storage/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/storage/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/visualization/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/visualization/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
     </item>
     
     <item>
@@ -37,16 +91,6 @@
       
       <guid>https://data-life.github.io/post/emr/predictableipforyourmaster/</guid>
       <description>The Problem Sometimes you are looking to be able to specify both the public and the private IP for an EMR cluster when it launches. This allows you to not have to change any existing infrastructure, while still being able to decommission an EMR cluster whenever it is needed and provision a new one. Currently you are able to attach an EIP to the master instance, but this does not solve the issue for private clusters and is cumbersome if clusters are constantly being provisioned/decommissioned.</description>
-    </item>
-    
-    <item>
-      <title>Supported EMRCluster Node Types</title>
-      <link>https://data-life.github.io/post/datapipeline/supportedemrnodetypes/</link>
-      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/post/datapipeline/supportedemrnodetypes/</guid>
-      <description>The Problem Data Pipeline supports instances that use Instance Storage, not EBS volumes. EMR clusters support both. These two worlds collide when you try to use Data Pipeline to launch an EMR cluster since your nodes will need to support instance storage.
-The Solution Since this can be a mission to figure out, the following are instance types categorized according to optimizations that have instance storage and are supported by EMR.</description>
     </item>
     
     <item>

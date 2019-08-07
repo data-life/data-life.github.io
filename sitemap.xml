@@ -3,6 +3,12 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://data-life.github.io/analysis/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://data-life.github.io/tags/architecture/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
@@ -10,6 +16,12 @@
   
   <url>
     <loc>https://data-life.github.io/categories/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/concepts/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -27,6 +39,18 @@
   </url>
   
   <url>
+    <loc>https://data-life.github.io/etl/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/mobility/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://data-life.github.io/tags/nodes/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
@@ -34,6 +58,12 @@
   
   <url>
     <loc>https://data-life.github.io/post/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/processing/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -51,13 +81,54 @@
   </url>
   
   <url>
+    <loc>https://data-life.github.io/storage/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://data-life.github.io/tags/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://data-life.github.io/analysis/splitbrain/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/concepts/splitbrain/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/etl/splitbrain/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/mobility/splitbrain/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://data-life.github.io/post/elasticsearch/splitbrain/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/processing/splitbrain/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/storage/splitbrain/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/visualization/splitbrain/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
   </url>
   
@@ -68,25 +139,8 @@
   </url>
   
   <url>
-    <loc>https://data-life.github.io/tags/cloudwatch/</loc>
-    <lastmod>2016-08-25T08:22:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</loc>
-    <lastmod>2016-08-25T08:22:55+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/tags/metrics/</loc>
-    <lastmod>2016-08-25T08:22:55+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/tags/status/</loc>
-    <lastmod>2016-08-25T08:22:55+00:00</lastmod>
+    <loc>https://data-life.github.io/visualization/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -117,41 +171,6 @@
     <loc>https://data-life.github.io/tags/step/</loc>
     <lastmod>2016-08-24T12:42:42+00:00</lastmod>
     <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/categories/data-pipeline/</loc>
-    <lastmod>2016-08-20T11:07:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/tags/data-pipeline/</loc>
-    <lastmod>2016-08-20T11:07:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/tags/emrcluster/</loc>
-    <lastmod>2016-08-20T11:07:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/tags/instance-storage/</loc>
-    <lastmod>2016-08-20T11:07:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/tags/instance-type/</loc>
-    <lastmod>2016-08-20T11:07:59+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/post/datapipeline/supportedemrnodetypes/</loc>
-    <lastmod>2016-08-20T11:07:59+00:00</lastmod>
   </url>
   
   <url>
@@ -196,6 +215,12 @@
   
   <url>
     <loc>https://data-life.github.io/tags/configuration/</loc>
+    <lastmod>2016-08-06T11:42:26+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/tags/metrics/</loc>
     <lastmod>2016-08-06T11:42:26+00:00</lastmod>
     <priority>0</priority>
   </url>

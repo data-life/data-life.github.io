@@ -6,20 +6,11 @@
     <description>Recent content in Metrics on Something Pithy about Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Thu, 25 Aug 2016 08:22:55 +0000</lastBuildDate>
+    <copyright>All rights reserved - 2019</copyright>
+    <lastBuildDate>Sat, 06 Aug 2016 11:42:26 +0000</lastBuildDate>
     
 	<atom:link href="https://data-life.github.io/tags/metrics/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Elasticsearch cluster metrics and what they mean</title>
-      <link>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</link>
-      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title>Anatomy of a Cluster Configuration Change in Elasticsearch</title>

@@ -6,7 +6,7 @@
     <description>Recent content in Categories on Something Pithy about Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>All rights reserved - 2016</copyright>
+    <copyright>All rights reserved - 2019</copyright>
     <lastBuildDate>Tue, 04 Oct 2016 12:03:44 +0000</lastBuildDate>
     
 	<atom:link href="https://data-life.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
@@ -27,15 +27,6 @@
       <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
       
       <guid>https://data-life.github.io/categories/emr/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Data Pipeline</title>
-      <link>https://data-life.github.io/categories/data-pipeline/</link>
-      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/categories/data-pipeline/</guid>
       <description></description>
     </item>
     

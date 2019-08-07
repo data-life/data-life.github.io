@@ -6,11 +6,47 @@
     <description>Recent content in Elasticsearch on Something Pithy about Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>All rights reserved - 2016</copyright>
+    <copyright>All rights reserved - 2019</copyright>
     <lastBuildDate>Tue, 04 Oct 2016 12:03:44 +0000</lastBuildDate>
     
 	<atom:link href="https://data-life.github.io/tags/elasticsearch/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/analysis/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/analysis/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/concepts/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/concepts/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/etl/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/etl/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/mobility/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/mobility/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
     
     <item>
       <title>The Split Brain Problem</title>
@@ -22,12 +58,30 @@
     </item>
     
     <item>
-      <title>Elasticsearch cluster metrics and what they mean</title>
-      <link>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</link>
-      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/processing/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
       
-      <guid>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</guid>
-      <description></description>
+      <guid>https://data-life.github.io/processing/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/storage/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/storage/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
+    </item>
+    
+    <item>
+      <title>The Split Brain Problem</title>
+      <link>https://data-life.github.io/visualization/splitbrain/</link>
+      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
+      
+      <guid>https://data-life.github.io/visualization/splitbrain/</guid>
+      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
     </item>
     
     <item>

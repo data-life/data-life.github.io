@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Something Pithy about Data</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-US</language>
-    <copyright>All rights reserved - 2016</copyright>
+    <copyright>All rights reserved - 2019</copyright>
     <lastBuildDate>Tue, 04 Oct 2016 12:03:44 +0000</lastBuildDate>
     
 	<atom:link href="https://data-life.github.io/post/index.xml" rel="self" type="application/rss+xml" />
@@ -22,31 +22,12 @@
     </item>
     
     <item>
-      <title>Elasticsearch cluster metrics and what they mean</title>
-      <link>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</link>
-      <pubDate>Thu, 25 Aug 2016 08:22:55 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/post/elasticsearch/metricsandmeaning/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>Predictable IP For Your Master Node</title>
       <link>https://data-life.github.io/post/emr/predictableipforyourmaster/</link>
       <pubDate>Wed, 24 Aug 2016 12:42:42 +0000</pubDate>
       
       <guid>https://data-life.github.io/post/emr/predictableipforyourmaster/</guid>
       <description>The Problem Sometimes you are looking to be able to specify both the public and the private IP for an EMR cluster when it launches. This allows you to not have to change any existing infrastructure, while still being able to decommission an EMR cluster whenever it is needed and provision a new one. Currently you are able to attach an EIP to the master instance, but this does not solve the issue for private clusters and is cumbersome if clusters are constantly being provisioned/decommissioned.</description>
-    </item>
-    
-    <item>
-      <title>Supported EMRCluster Node Types</title>
-      <link>https://data-life.github.io/post/datapipeline/supportedemrnodetypes/</link>
-      <pubDate>Sat, 20 Aug 2016 11:07:59 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/post/datapipeline/supportedemrnodetypes/</guid>
-      <description>The Problem Data Pipeline supports instances that use Instance Storage, not EBS volumes. EMR clusters support both. These two worlds collide when you try to use Data Pipeline to launch an EMR cluster since your nodes will need to support instance storage.
-The Solution Since this can be a mission to figure out, the following are instance types categorized according to optimizations that have instance storage and are supported by EMR.</description>
     </item>
     
     <item>
