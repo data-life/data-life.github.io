@@ -27,13 +27,13 @@
   </url>
   
   <url>
-    <loc>https://data-life.github.io/categories/elasticsearch/</loc>
+    <loc>https://data-life.github.io/tags/elasticsearch/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://data-life.github.io/tags/elasticsearch/</loc>
+    <loc>https://data-life.github.io/categories/elasticsearch/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -54,6 +54,11 @@
     <loc>https://data-life.github.io/tags/nodes/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://data-life.github.io/concepts/overview/</loc>
+    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
   </url>
   
   <url>
@@ -94,11 +99,6 @@
   
   <url>
     <loc>https://data-life.github.io/analysis/splitbrain/</loc>
-    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/concepts/splitbrain/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
   </url>
   
@@ -145,13 +145,13 @@
   </url>
   
   <url>
-    <loc>https://data-life.github.io/categories/emr/</loc>
+    <loc>https://data-life.github.io/tags/emr/</loc>
     <lastmod>2016-08-24T12:42:42+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://data-life.github.io/tags/emr/</loc>
+    <loc>https://data-life.github.io/categories/emr/</loc>
     <lastmod>2016-08-24T12:42:42+00:00</lastmod>
     <priority>0</priority>
   </url>

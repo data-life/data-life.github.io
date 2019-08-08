@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0, user-scalable=no"/>
-  <title>The Split Brain Problem</title>
+  <title>Overview of Data Lifecycle Concepts</title>
   <link href="https://data-life.github.io/css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link href="https://data-life.github.io/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.6/styles/default.min.css">
@@ -46,7 +46,7 @@
     <div class="row">
       <div class="col s12">
         <div class="card-panel">
-          <h4>The Split Brain Problem</h4>
+          <h4>Overview of Data Lifecycle Concepts</h4>
           <p>
           
             
@@ -54,15 +54,10 @@
             
            
           </p>
-          <p>
+          <p><p>This is the page that shows you the most high level view of the lifecycle. Each section will take you to posts with more specific information for each of the domains. Explore for more posts and details</p>
 
-<h2 id="the-problem">The Problem</h2>
-
-<p>Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason? Both nodes will think that the other node has gone off line. In the case of the original master, it will carry on life as normal, trying to assign replica shards as soon as another node comes on line. In the case of the other node, it will now promote itself to be a master and promote its replica shards to be primary shards. Any requests that come in at this point will result in the shards diverging from each other. Once communication is restored or you decide to manually intervene, you now have two masters that both potentially have some of the most up to date information. This makes the resulting data set very difficult to deal with, if it&rsquo;s at all possible, without ingesting the data again.</p>
-
-<h2 id="the-solution">The Solution</h2>
-
-<p>The easiest solution is to have an odd number of nodes in your cluster. This ensures that if there is a break in communication between two groups of nodes (No matter the distribution of numbers), you will always have a quorum for who the true master is. While this method goes a long way towards ensuring the resilience</p>
+<div class="mxgraph" style="max-width:100%;border:1px solid transparent;" data-mxgraph="{&amp;quot;highlight&amp;quot;:&amp;quot;#0000ff&amp;quot;,&amp;quot;lightbox&amp;quot;:false,&amp;quot;nav&amp;quot;:true,&amp;quot;resize&amp;quot;:true,&amp;quot;toolbar&amp;quot;:&amp;quot;zoom layers&amp;quot;,&amp;quot;xml&amp;quot;:&amp;quot;&amp;lt;mxfile modified=\&amp;quot;2019-08-07T12:18:40.900Z\&amp;quot; host=\&amp;quot;www.draw.io\&amp;quot; agent=\&amp;quot;Mozilla/5.0 (Windows NT 10.0; WOW64; rv:60.0) Gecko/20100101 Firefox/60.0\&amp;quot; etag=\&amp;quot;nYIB-evTp70SpdvgRVhC\&amp;quot; version=\&amp;quot;11.1.2\&amp;quot; type=\&amp;quot;device\&amp;quot;&amp;gt;&amp;lt;diagram id=\&amp;quot;07fea595-8f29-1299-0266-81d95cde20df\&amp;quot; name=\&amp;quot;Page-1\&amp;quot;&amp;gt;7Zrdc6I6FMD/Gh/XCQlJ4NFaa51xtbO6e6f3LULEbJFwgbZ2//qbSBAE7MdMbXW2&#43;CCcnHxwzu&#43;cfGgH9debYcLi1Xfp87ADgb/poMsOhBa0gPrSkqdc8s2i0MpFQSJ8o1YKZuIPN0JTM7gXPk/3FDMpw0zE&#43;0JPRhH3sj0ZSxL5uK&#43;2lOF&#43;rzELeEMw81jYlP4j/GxlpBZxy4JrLoKV6dqBNC9YMO8uSOR9ZPrrQLTcXnnxmhVtmRdNV8yXjxURGnRQP5Eyy&#43;/Wmz4PtXULs&#43;X1rg6U7sad8ChrqfAz5cl08VubDIKQLZTjzDBJqPQvljLSJWn2ZCxB/ruXRcG3dOunnlJAIN6UhVtHhDLZq1F581JEAvO97W1RF6QxiwrZZW&#43;uexqPrgZFsXqNqkZbrf5tf6z0QX866Q9u5rNdV0m91oHGlLgxLCXLDVOItY1DEd3lxlMQejzOUm3lbVHhDWLbO5fuXFXaFirnx/p2xTcskJFqOuaJWPOMJ6X0phCphi4eVyLjs5h5utqjij4lW2Vr7UVLW6KgCaiHrXsvdjz2jYciGXGtmiXyjvd3bkMQ2Ta&#43;1K4WYdgmDxLmC4VVrSFtmSu2FqEO9msePvBMeMwUmMiGyDzX21WGumChCNS7X3qqbf3iZmhF3KGdxatUG9AfeJLxTUVkbD3kUtkseVIqptSGThdTx7UpIo6tQhnnLZgUBSmxu9R1oI2JZQOUew6CxzL6kWV1dU2AIUGWaovkKqtKHoDY7TqkomV0mMlHwW5cZUyqGwNH8ViJ0vYwJ7YZ/QML73kRwnCfriwRLAr009GwKRDYJ&#43;Zqe70SDYu&#43;BY1EZiwTOlQuXfAMk6GIf5mX0/fX5l4qE4hMjwaC98EKAbdbJ8mBXVK5cIMkCpvkWBi&#43;GZVD2Xw2n/7oDQf1PJVmMtHzXjNNkZNNU6/OLq/IInVYFGmckQUhTYSXjsc9ry1NLhxs43eC56WchIH9Akmfl5MOsfd9ejEaj&#43;a3dfjWciFCHXtN&#43;ujJ0tfwfu6HFl6w/rQztth&#43;3pnld6CPEJWnKvjBffgIsruW6&#43;bTIQYFWScN32A&#43;VtrXt8PRYNJIfzwLW&#43;Bzzgc&#43;By5QG3w&#43;5o5vt8PnUh9QenbwKXkXEqy5o9RyoXMG8N38mPYHs9loMqyTFyfS42kqoqAFQPd8APTVZInbst9yCbezZQuAy6Xv5tCeFoAvzL0IwNPdDxwisDfpjW9no1mdPxax8CkVLRtUDM6IPuouAGijz/NVgjhAH8N5ndOiz1L5rbbYO8eU92s0&#43;9kbj/7tzUfTSZ26B5HeK2v&#43;yTdsTfSs80HPdYnl4CZ6nPjA5&#43;3o&#43;Zgi1z9R9EB5Weez7GuegxSb5pM8BylP1I55DoKsw&#43;cgRwGIAlBDhjgvbVNxExGK3oxEi//Rl/&#43;f8X/17Os4qyhUn8cQsPcPLT4QBvsLBuh&#43;cDawSWMlo6Ly0/LBKZ&#43;LnwACR08IhNBGQlBrgU9KCOSvp&#43;G5X0mOAoADrC6o7KtrmxyqVpeflBroFwwv/GR21MyAEOy6lV2DS2po2OBj0FCP5f8rtmWVv7Ggwf8=&amp;lt;/diagram&amp;gt;&amp;lt;/mxfile&amp;gt;&amp;quot;}"></div>
+<script type="text/javascript" src="https://www.draw.io/js/viewer.min.js"></script>
 </p>
           <p>4 Oct 2016
             
@@ -87,13 +82,13 @@
     <div class="row">
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="https://data-life.github.io/mobility/splitbrain/"><i class="mdi-navigation-arrow-back"></i></a>
+        <a class="btn-floating btn-large waves-effect waves-light" href="https://data-life.github.io/analysis/splitbrain/"><i class="mdi-navigation-arrow-back"></i></a>
       
       </div>
-      <div class="col s6 m10 center"><a href="https://data-life.github.ioetl/"><img src="https://data-life.github.io/images/DataLife-ETLico.png"></a></div>
+      <div class="col s6 m10 center"><a href="https://data-life.github.io/concepts/"><img src="https://data-life.github.io/images/DataLife-Conceptsico.png"></a></div>
       <div class="col s3 m1">
       
-        <a class="btn-floating btn-large waves-effect waves-light" href="https://data-life.github.io/analysis/splitbrain/"><i class="mdi-navigation-arrow-forward"></i></a>
+        <a class="btn-floating btn-large disabled"><i class="mdi-navigation-arrow-forward"></i></a>
       
       </div>
     </div>
