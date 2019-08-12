@@ -86,12 +86,6 @@
   </url>
   
   <url>
-    <loc>https://data-life.github.io/storage/</loc>
-    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://data-life.github.io/tags/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
     <priority>0</priority>
@@ -119,11 +113,6 @@
   
   <url>
     <loc>https://data-life.github.io/processing/splitbrain/</loc>
-    <lastmod>2016-10-04T12:03:44+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://data-life.github.io/storage/splitbrain/</loc>
     <lastmod>2016-10-04T12:03:44+00:00</lastmod>
   </url>
   

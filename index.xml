@@ -69,15 +69,6 @@
     
     <item>
       <title>The Split Brain Problem</title>
-      <link>https://data-life.github.io/storage/splitbrain/</link>
-      <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
-      
-      <guid>https://data-life.github.io/storage/splitbrain/</guid>
-      <description>The Problem Consider a two node cluster that contains one index with a replication factor of one. This means that each shard of data in the index resides on one node and is replicated to the other node. One of these nodes is elected the master of the cluster to handle administrative tasks and it holds the primary shard for the index. What happens when there is a break in communication between the two nodes for whatever reason?</description>
-    </item>
-    
-    <item>
-      <title>The Split Brain Problem</title>
       <link>https://data-life.github.io/visualization/splitbrain/</link>
       <pubDate>Tue, 04 Oct 2016 12:03:44 +0000</pubDate>
       
